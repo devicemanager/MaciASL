@@ -43,7 +43,7 @@
 			<string>Viewer</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>org.acidanthera.maciasl.tableset</string>
+				<string>org.devicemanager.maciasl.tableset</string>
 			</array>
 			<key>NSDocumentClass</key>
 			<string>Document</string>
@@ -55,7 +55,7 @@
 			<string>Viewer</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>org.acidanthera.iojones</string>
+				<string>org.devicemanager.iojones</string>
 			</array>
 			<key>NSDocumentClass</key>
 			<string>Document</string>
@@ -142,7 +142,7 @@
 			<key>UTTypeDescription</key>
 			<string>ACPI Tableset</string>
 			<key>UTTypeIdentifier</key>
-			<string>org.acidanthera.maciasl.tableset</string>
+			<string>org.devicemanager.maciasl.tableset</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
@@ -162,7 +162,7 @@
 			<key>UTTypeDescription</key>
 			<string>IOJones Document</string>
 			<key>UTTypeIdentifier</key>
-			<string>org.acidanthera.iojones</string>
+			<string>org.devicemanager.iojones</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

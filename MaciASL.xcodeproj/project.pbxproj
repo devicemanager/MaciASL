@@ -493,7 +493,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\necho \"Providing Sparkle entry support for ${TARGET_BUILD_DIR}/MaciASL.app in $CONFIGURATION mode\"\nplutil -insert \"SUAllowsAutomaticUpdates\" -bool true ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUEnableAutomaticChecks\" -bool true ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUFeedURL\" -string \"https://raw.githubusercontent.com/acidanthera/MaciASL/appcast/appcast.xml\" ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUPublicEDKey\" -string \"d6TTl9OeRP+CH+IiQwgLCUsxj6DXK+Fnrcfmcj61ANk=\" ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUScheduledCheckInterval\" -integer \"86400\" ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nelse\necho \"Skipping Sparkle support for ${TARGET_BUILD_DIR}/MaciASL.app in $CONFIGURATION mode\"\nfi\n";
+			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\necho \"Providing Sparkle entry support for ${TARGET_BUILD_DIR}/MaciASL.app in $CONFIGURATION mode\"\nplutil -insert \"SUAllowsAutomaticUpdates\" -bool true ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUEnableAutomaticChecks\" -bool true ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUFeedURL\" -string \"https://raw.githubusercontent.com/devicemanager/MaciASL/appcast/appcast.xml\" ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUPublicEDKey\" -string \"d6TTl9OeRP+CH+IiQwgLCUsxj6DXK+Fnrcfmcj61ANk=\" ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nplutil -insert \"SUScheduledCheckInterval\" -integer \"86400\" ${TARGET_BUILD_DIR}/MaciASL.app/Contents/Info.plist || echo \"Skipping\"\nelse\necho \"Skipping Sparkle support for ${TARGET_BUILD_DIR}/MaciASL.app in $CONFIGURATION mode\"\nfi\n";
 		};
 		CE775909211C252C0063EAE6 /* Archive */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -738,7 +738,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.acidanthera.MaciASL;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devicemanager.MaciASL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -759,7 +759,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.acidanthera.MaciASL;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devicemanager.MaciASL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -787,7 +787,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "MaciASL Tests/MaciASL Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = org.acidanthera.MaciASL;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devicemanager.MaciASL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -813,7 +813,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "MaciASL Tests/MaciASL Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = org.acidanthera.MaciASL;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devicemanager.MaciASL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -832,7 +832,7 @@
 				INFOPLIST_FILE = "ACPIImporter/ACPIImporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
 				LIBRARY_STYLE = BUNDLE;
-				PRODUCT_BUNDLE_IDENTIFIER = org.acidanthera.MaciASL;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devicemanager.MaciASL;
 				PRODUCT_NAME = ACPI;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = mdimporter;
@@ -851,7 +851,7 @@
 				INFOPLIST_FILE = "ACPIImporter/ACPIImporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
 				LIBRARY_STYLE = BUNDLE;
-				PRODUCT_BUNDLE_IDENTIFIER = org.acidanthera.MaciASL;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devicemanager.MaciASL;
 				PRODUCT_NAME = ACPI;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = mdimporter;

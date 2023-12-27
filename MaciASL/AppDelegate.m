@@ -173,7 +173,7 @@
     for (NSString *iasl in versions) {
         [_update becomeCurrentWithPendingUnitCount:1];
         dispatch_group_enter(g);
-        NSURL *src = [NSURL URLWithString:[NSString stringWithFormat:@"https://github.com/acidanthera/MaciASL/raw/master/Dist/iasl-%@", iasl]];
+        NSURL *src = [NSURL URLWithString:[NSString stringWithFormat:@"https://github.com/devicemanager/MaciASL/raw/master/Dist/iasl-%@", iasl]];
         NSURL *dst = [[[NSBundle.mainBundle executableURL] URLByDeletingLastPathComponent] URLByAppendingPathComponent:[NSString stringWithFormat:@"iasl-%@", iasl]];
         [URLTask get:src toURL:dst perform:^(bool success){
             muteWithNotice(self->_update, fractionCompleted, self->_update.completedUnitCount++);

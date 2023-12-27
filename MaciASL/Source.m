@@ -67,7 +67,7 @@ static SourceList *sharedList;
         _archive = [NSMutableDictionary dictionary];
         _providers = [NSMutableArray array];
         _queue = [NSOperationQueue new];
-        _queue.name = @"org.acidanthera.maciasl.sourcelist";
+        _queue.name = @"org.devicemanager.maciasl.sourcelist";
         _reach = true;
         _reachability = SCNetworkReachabilityCreateWithName(kCFAllocatorDefault, "github.com");
         SCNetworkReachabilityFlags flags;

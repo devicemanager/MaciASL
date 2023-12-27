@@ -9,9 +9,9 @@
 #define kMaciASLDomain @"MaciASLDomain"
 #define kUTTypeAML @"org.acpica.aml"
 #define kUTTypeDSL @"org.acpica.dsl"
-#define kUTTypeNavObject @"org.acidanthera.maciasl.navobject"
-#define kUTTypeTableset @"org.acidanthera.maciasl.tableset"
-#define kUTTypeIOJones @"org.acidanthera.iojones"
+#define kUTTypeNavObject @"org.devicemanager.maciasl.navobject"
+#define kUTTypeTableset @"org.devicemanager.maciasl.tableset"
+#define kUTTypeIOJones @"org.devicemanager.iojones"
 #define lineForRange(x,y) [x substringWithRange:[x lineRangeForRange:y]]
 #define assignWithNotice(x,y,z) {[x willChangeValueForKey:@""#y];_##y=z;[x didChangeValueForKey:@""#y];}
 #define muteWithNotice(x,y,z) {[x willChangeValueForKey:@""#y];z;[x didChangeValueForKey:@""#y];}

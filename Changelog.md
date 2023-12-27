@@ -30,7 +30,7 @@ MaciASL Changelog
 - Fixed parse error
 
 #### v1.5.7
-- Added Acidanthera as default BundleIdentifier
+- Added devicemanager as default BundleIdentifier
 
 #### v1.5.6
 - Unified release archive names
@@ -38,7 +38,7 @@ MaciASL Changelog
 #### v1.5.5
 - Workaround line number width on 10.13
 - Fixed crash in ACPI spotlight plugin
-- Fixed opening selected ACPI table in some locales ([#313](https://github.com/acidanthera/bugtracker/issues/313))
+- Fixed opening selected ACPI table in some locales ([#313](https://github.com/devicemanager/bugtracker/issues/313))
 - Fixed crash when updating iasl
 - Fixed showing error count for latest iasl
 - Supported iasl compiler versions changed to 20100331, 20190405, 20190509
